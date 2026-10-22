@@ -95,14 +95,14 @@ h1, h2, h3 { font-family: var(--font-display); }
 .objective-card:hover { transform: translateY(-4px); box-shadow: 0 15px 35px rgb(16 52 71 / 8%); }
 .card-index { position: absolute; top: 26px; right: 27px; color: #a5b8bc; font: 700 12px/1 var(--font-display); letter-spacing: 1px; }
 .card-icon { position: relative; width: 54px; height: 54px; margin-bottom: 24px; border: 1px solid #d8ebe8; border-radius: 50%; background: #f0f8f6; }
-.card-icon svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-.scattering-ray { fill: none; stroke: var(--teal); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.card-icon img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.scattering-ray { fill: none; stroke: var(--teal); stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
 .scattering-particle { fill: var(--white); stroke: var(--ink); stroke-width: 1.5; }
 .scattering-particle-gold { stroke: var(--gold); }
-.scattering-arrow { fill: none; stroke: var(--gold); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.scattering-arrow { fill: none; stroke: var(--gold); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
 .acceleration-trail { fill: none; stroke: #9fc9c5; stroke-width: 2; stroke-linecap: round; }
-.acceleration-arrow, .acceleration-head { fill: none; stroke: var(--teal); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
-.acceleration-head { stroke: var(--gold); stroke-width: 2.5; }
+.acceleration-arrow, .acceleration-head { fill: none; stroke: var(--teal); stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+.acceleration-head { stroke: var(--gold); stroke-width: 3; }
 .validation-check { fill: none; stroke: var(--teal); stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
 .objective-card h3 { margin-bottom: 11px; font-size: 18px; font-weight: 700; letter-spacing: -.4px; line-height: 1.35; }
 .objective-card p { min-height: 79px; margin-bottom: 20px; color: var(--ink-soft); font-size: 13px; line-height: 1.7; }
