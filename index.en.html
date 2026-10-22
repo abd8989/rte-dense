@@ -317,15 +317,27 @@
       const visitorCount = document.getElementById("visitor-count");
       const trackingScript = document.querySelector("script[data-goatcounter]");
       if (visitorCount && trackingScript) {
-        const endpoint = new URL(trackingScript.dataset.goatcounter);
-        const totalCountUrl = new URL("/counter/TOTAL.json", endpoint);
-        fetch(totalCountUrl)
-          .then((response) => {
-            if (!response.ok) throw new Error("Visitor count unavailable");
-            return response.json();
-          })
-          .then((data) => {
-            if (data.count !== undefined) visitorCount.textContent = data.count;
+        const counterOrigin = new URL(trackingScript.dataset.goatcounter).origin;
+        const sitePath = window.location.pathname
+          .replace(/\/index(?:\.en)?\.html$/, "")
+          .replace(/\/+$/, "");
+        const pagePaths = [...new Set([
+          sitePath || "/",
+          `${sitePath}/index.html`,
+          `${sitePath}/index.en.html`
+        ])];
+        const countPage = async (path) => {
+          const encodedPath = path.split("/").map(encodeURIComponent).join("/");
+          const counterUrl = new URL(`/counter/${encodedPath}.json`, counterOrigin);
+          const response = await fetch(counterUrl);
+          if (response.status === 404) return 0;
+          if (!response.ok) throw new Error("Visitor count unavailable");
+          const data = await response.json();
+          return Number.parseInt(String(data.count ?? "0").replace(/[^\d]/g, ""), 10) || 0;
+        };
+        Promise.all(pagePaths.map(countPage))
+          .then((counts) => {
+            visitorCount.textContent = counts.reduce((total, count) => total + count, 0).toLocaleString();
           })
           .catch(() => { visitorCount.textContent = "—"; });
       }
