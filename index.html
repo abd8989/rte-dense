@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#103447">
+    <meta name="description" content="RTE-DENSE étudie des méthodes avancées de résolution du transfert radiatif en milieux diffusants denses, avec un démonstrateur centré sur la caméra en brouillard et une validation sur PAVIN.">
+    <title>RTE-DENSE — Transfert radiatif et perception embarquée</title>
+    <link rel="icon" type="image/svg+xml" href="assets/RTE-DENSE-icon.svg">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="#accueil" aria-label="RTE-DENSE, accueil">
+          <img src="assets/RTE-DENSE-icon.svg" alt="" width="48" height="48">
+          <span>RTE<span class="brand-dash">—</span>DENSE</span>
+        </a>
+        <div class="language-switch" aria-label="Choix de langue">
+          <a class="language-option" href="index.html" lang="fr" aria-current="page" aria-label="Français">
+            <svg class="language-flag" viewBox="0 0 18 12" aria-hidden="true" focusable="false"><rect width="6" height="12" fill="#0055a4"/><rect x="6" width="6" height="12" fill="#fff"/><rect x="12" width="6" height="12" fill="#ef4135"/></svg>
+            <span>FR</span>
+          </a>
+          <a class="language-option" href="index.en.html" lang="en" aria-label="Anglais">
+            <svg class="language-flag" viewBox="0 0 18 12" aria-hidden="true" focusable="false"><rect width="18" height="12" fill="#012169"/><path d="M0 0 18 12M18 0 0 12" stroke="#fff" stroke-width="3"/><path d="M0 0 18 12M18 0 0 12" stroke="#c8102e" stroke-width="1.1"/><path d="M9 0v12M0 6h18" stroke="#fff" stroke-width="4"/><path d="M9 0v12M0 6h18" stroke="#c8102e" stroke-width="2"/></svg>
+            <span>EN</span>
+          </a>
+        </div>
+        <nav aria-label="Navigation principale">
+          <a href="#enjeu">Le projet</a>
+          <a href="#objectifs">Objectifs</a>
+          <a href="#approche">Approche</a>
+          <a href="#validation">Validation</a>
+          <a href="#equipe">Équipe</a>
+          <a href="#recrutement">Recrutement</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <section class="hero" id="accueil">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Projet ANR JCJC · AAPG 2026</p>
+            <h1>Simuler la lumière dans les milieux diffusants denses</h1>
+            <p class="hero-lede">RTE-DENSE vise à améliorer la résolution du transfert radiatif pour simuler la perception des capteurs, avec le brouillard dense comme cas d’étude prioritaire.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#enjeu">Découvrir le projet <span aria-hidden="true">↘</span></a>
+              <a class="text-link" href="#objectifs">Voir les objectifs <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="facts" aria-label="Repères sur le projet">
+              <div><strong>48 mois</strong><span>durée du projet</span></div>
+              <div><strong>Cerema · STI</strong><span>coordination scientifique</span></div>
+              <div><strong>Clermont-Ferrand</strong><span>agence du coordinateur</span></div>
+            </div>
+          </div>
+          <div class="hero-art" aria-label="Illustration du transfert lumineux dans un milieu diffusant jusqu’à un capteur">
+            <div class="art-orbit orbit-one"></div>
+            <div class="art-orbit orbit-two"></div>
+            <img src="assets/RTE-DENSE-logo.svg" alt="RTE-DENSE — transfert radiatif en milieux diffusants denses au service de la perception embarquée">
+            <p class="art-caption"><span></span> Lumière · milieu · capteur</p>
+          </div>
+        </div>
+        <div class="hero-bottom" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      </section>
+
+      <section class="section intro-section" id="enjeu">
+        <div class="wrap intro-grid">
+          <div>
+            <p class="section-kicker">Le défi scientifique</p>
+            <h2>Quand l’atmosphère diffuse la lumière, la scène devient plus difficile à lire.</h2>
+          </div>
+          <div class="intro-copy">
+            <p>Dans les milieux diffusants denses, les interactions multiples entre la lumière et le milieu rendent la simulation des signaux reçus par les capteurs particulièrement coûteuse. Le projet prend le brouillard dense comme cas d’étude prioritaire.</p>
+            <p>RTE-DENSE vise à développer des méthodes de résolution de l’équation du transfert radiatif, à explorer des accélérations guidées par la physique et à confronter les simulations à des acquisitions expérimentales. Le démonstrateur principal porte sur le capteur caméra.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section objectives-section" id="objectifs">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Trois objectifs complémentaires</p>
+              <h2>De la physique au capteur</h2>
+            </div>
+            <p>Le projet relie modélisation physique, calcul efficace et validation expérimentale.</p>
+          </div>
+          <div class="objective-grid">
+            <article class="objective-card">
+              <span class="card-index">01</span>
+              <div class="card-icon icon-rays" aria-hidden="true"><i></i><i></i><i></i></div>
+              <h3>Résoudre le transfert radiatif</h3>
+              <p>Développer et comparer des méthodes de résolution de l’équation du transfert radiatif adaptées aux milieux diffusants denses.</p>
+              <span class="card-tag">Méthodes numériques</span>
+            </article>
+            <article class="objective-card">
+              <span class="card-index">02</span>
+              <div class="card-icon icon-network" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+              <h3>Accélérer les simulations</h3>
+              <p>Explorer des accélérations par intelligence artificielle guidées par la physique, en préservant la fidélité radiométrique.</p>
+              <span class="card-tag">IA guidée par la physique</span>
+            </article>
+            <article class="objective-card">
+              <span class="card-index">03</span>
+              <div class="card-icon icon-check" aria-hidden="true"><i></i><i></i></div>
+              <h3>Valider par l’expérience</h3>
+              <p>Établir une validation croisée avec des acquisitions dans PAVIN et des métriques physiques et perceptives.</p>
+              <span class="card-tag">Simulation · mesure</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section approach-section" id="approche">
+        <div class="wrap approach-grid">
+          <div class="approach-heading">
+            <p class="section-kicker">Une démarche intégrée</p>
+            <h2>Construire, accélérer, confronter.</h2>
+            <p>RTE-DENSE s’organise autour de trois volets de recherche et d’un volet transverse consacré à la coordination, à l’intégration et à la diffusion.</p>
+          </div>
+          <div class="work-packages">
+            <article class="work-row">
+              <span class="wp-number">WP1</span>
+              <div><h3>Méthodes avancées de simulation dans les milieux diffusants denses</h3><p>Développer et comparer des schémas de résolution adaptés aux régimes de brouillard dense.</p></div>
+              <span class="row-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="work-row">
+              <span class="wp-number">WP2</span>
+              <div><h3>Accélérateurs IA guidés par la physique</h3><p>Réduire les temps de calcul sans compromettre la fidélité radiométrique des résultats.</p></div>
+              <span class="row-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="work-row">
+              <span class="wp-number">WP3</span>
+              <div><h3>Validation expérimentale et métriques</h3><p>Confronter les méthodes développées à des acquisitions dans PAVIN avec des métriques physiques et perceptives.</p></div>
+              <span class="row-arrow" aria-hidden="true">↗</span>
+            </article>
+            <p class="cross-cutting"><span>WP0</span> Coordination, pilotage transverse, intégration et diffusion.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="validation-section" id="validation">
+        <div class="wrap validation-inner">
+          <div class="validation-intro">
+            <p class="section-kicker section-kicker-light">Une validation en conditions contrôlées</p>
+            <h2>Relier les simulations aux mesures sur PAVIN.</h2>
+            <p>Le WP3 prévoit des acquisitions sur la plateforme PAVIN, qui reproduit des conditions de pluie et de brouillard, puis une comparaison croisée avec les simulations au moyen de métriques physiques et perceptives.</p>
+          </div>
+
+          <figure class="validation-diagram" aria-labelledby="validation-diagram-caption">
+            <div class="validation-lanes">
+              <article class="validation-lane">
+                <span class="lane-label">Essais expérimentaux</span>
+                <div class="flow-node"><strong>Plateforme PAVIN</strong><span>Conditions contrôlées : brouillard et pluie</span></div>
+                <span class="flow-arrow" aria-hidden="true">↓</span>
+                <div class="flow-node flow-node-output"><strong>Acquisitions expérimentales</strong><span>Scénarios de référence</span></div>
+              </article>
+              <article class="validation-lane">
+                <span class="lane-label">Simulation numérique</span>
+                <div class="flow-node"><strong>RTE-DENSE dans SWEET</strong><span>Méthodes étudiées dans le projet</span></div>
+                <span class="flow-arrow" aria-hidden="true">↓</span>
+                <div class="flow-node flow-node-output"><strong>Images simulées</strong><span>Démonstrateur caméra en brouillard</span></div>
+              </article>
+            </div>
+            <div class="validation-merge" aria-hidden="true"><span>↓</span><span>↓</span></div>
+            <div class="validation-result">
+              <span class="result-kicker">Mise en regard</span>
+              <strong>Comparaison simulation–expérimentation</strong>
+              <span>Métriques physiques et perceptives · fidélité · coût de calcul</span>
+            </div>
+            <figcaption id="validation-diagram-caption">Principe de validation croisée prévu dans le WP3.</figcaption>
+          </figure>
+
+          <a class="button validation-link" href="https://www.cerema.fr/fr/evenements/plateforme-pavin-meteo-extreme" target="_blank" rel="noreferrer">Découvrir la plateforme PAVIN <span aria-hidden="true">↗</span></a>
+          <p class="pavin-contact"><strong>Vous souhaitez organiser des essais ou formuler une demande spécifique liée à PAVIN&nbsp;?</strong> Écrivez à <a href="mailto:adweather@cerema.fr">adweather@cerema.fr</a>.</p>
+        </div>
+      </section>
+
+      <section class="section platform-section">
+        <div class="wrap platform-grid">
+          <div class="platform-copy">
+            <p class="section-kicker">Socle de simulation</p>
+            <h2>SWEET, un outil au service de la recherche.</h2>
+            <p>SWEET est le simulateur du Cerema dédié à la simulation des capteurs perceptifs en conditions météorologiques perturbées. Le projet prévoit d’y développer et d’y évaluer de nouvelles méthodes de simulation adaptées aux milieux diffusants denses, ainsi que des accélérateurs guidés par la physique.</p>
+            <a class="resource-link" href="https://cv.hal.science/researchercerema" target="_blank" rel="noreferrer">Publications liées à SWEET sur HAL <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="platform-note">
+            <span class="note-symbol" aria-hidden="true">∿</span>
+            <p>Une chaîne de travail qui associe <strong>modèles physiques</strong>, <strong>simulation de capteurs</strong> et <strong>essais expérimentaux</strong>.</p>
+            <span class="note-line"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section recruitment-section" id="recrutement">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Nous recrutons</p>
+              <h2>Rejoignez le projet RTE-DENSE.</h2>
+            </div>
+            <p>Deux offres du Cerema sont ouvertes à Clermont-Ferrand.</p>
+          </div>
+          <div class="job-grid">
+            <article class="job-card">
+              <span class="job-type">Doctorat</span>
+              <h3>Doctorant(e) en simulation numérique du transfert radiatif</h3>
+              <p>Une thèse consacrée aux méthodes de simulation du transfert radiatif en brouillard dense, dans le cadre du WP1.</p>
+              <a class="resource-link" href="https://recrutement.ecologie.gouv.fr/offres-demploi/2026-2446959" target="_blank" rel="noreferrer">Voir l’offre de doctorat <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="job-card">
+              <span class="job-type">Postdoctorat</span>
+              <h3>Post-doctorant(e) en IA guidée par la physique</h3>
+              <p>Un postdoctorat consacré aux méthodes d’accélération des simulations du transfert radiatif, dans le cadre du WP2.</p>
+              <a class="resource-link" href="https://recrutement.ecologie.gouv.fr/offres-demploi/2026-2446952" target="_blank" rel="noreferrer">Voir l’offre de postdoctorat <span aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section team-section" id="equipe">
+        <div class="wrap team-grid">
+          <div class="team-copy">
+            <p class="section-kicker">Coordination scientifique</p>
+            <h2>Un projet coordonné au Cerema par l’équipe STI.</h2>
+            <p>RTE-DENSE est coordonné par Amine Ben Daoued, chargé de recherche au Cerema, au sein de l’équipe Systèmes de Transports Intelligents (STI), à l’agence de Clermont-Ferrand.</p>
+            <p class="coordinator-contact">Pour toute demande d’information ou prise de contact : <a href="mailto:amine.ben-daoued@cerema.fr">amine.ben-daoued@cerema.fr</a>.</p>
+            <div class="team-links">
+              <a class="resource-link" href="https://www.cerema.fr/fr/innovation-recherche/recherche/equipes/sti-systemes-transports-intelligents-infrastructure-demain" target="_blank" rel="noreferrer">Découvrir l’équipe STI <span aria-hidden="true">↗</span></a>
+              <a class="resource-link" href="https://www.cerema.fr/fr/innovation-recherche/recherche/equipes/membre/amine-ben-daoued" target="_blank" rel="noreferrer">Profil d’Amine Ben Daoued <span aria-hidden="true">↗</span></a>
+              <a class="resource-link" href="https://cv.hal.science/researchercerema" target="_blank" rel="noreferrer">Publications sur HAL <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="partner-logos" aria-label="Organismes associés au projet">
+            <div class="partner-card">
+              <span class="partner-label">Financement</span>
+              <a class="anr-lockup" href="https://anr.fr/fr/contact/charte-graphique-et-logo/" target="_blank" rel="noreferrer" aria-label="ANR — charte graphique et logo">
+                <img src="assets/ANR-logo-2021-sigle.jpg" alt="ANR, Agence nationale de la recherche" loading="lazy">
+              </a>
+            </div>
+            <div class="partner-card">
+              <span class="partner-label">Coordination</span>
+              <a class="cerema-lockup" href="https://www.cerema.fr/fr/innovation-recherche/recherche/equipes/sti-systemes-transports-intelligents-infrastructure-demain" target="_blank" rel="noreferrer" aria-label="Cerema et République française — équipe STI">
+                <img class="republique-logo" src="assets/republique_francaise.png" alt="République française" loading="lazy">
+                <span class="logo-divider" aria-hidden="true"></span>
+                <img class="cerema-logo" src="assets/cerema_horizontal.png" alt="Cerema — Climat & territoires de demain" loading="lazy">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing-section">
+        <div class="wrap closing-inner">
+          <img src="assets/RTE-DENSE-icon.svg" alt="" width="56" height="56">
+          <div><p class="section-kicker">Projet ANR JCJC · AAPG 2026</p><h2>RTE-DENSE</h2><p>Résolution avancée de l’équation de transfert radiatif pour milieux diffusants denses au service de la perception embarquée.</p></div>
+          <div class="closing-meta"><span>48 mois</span><span>Coordination : Cerema · STI</span><span>Clermont-Ferrand</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <a class="footer-brand" href="#accueil">RTE<span>—</span>DENSE</a>
+        <p>Projet de recherche coordonné au Cerema · Équipe Systèmes de Transports Intelligents</p>
+        <a href="#accueil" class="back-top">Retour en haut ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>

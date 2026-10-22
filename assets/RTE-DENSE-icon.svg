@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title description">
+  <title id="title">Symbole RTE-DENSE</title>
+  <desc id="description">Un faisceau lumineux est diffusé par des particules avant d’atteindre un capteur.</desc>
+  <circle cx="100" cy="100" r="94" fill="#EEF5F5"/>
+  <g fill="none" stroke="#70AAA9" stroke-linecap="round" stroke-width="2.5" opacity=".7">
+    <path d="M57 100 74 61" stroke-dasharray="3 6"/>
+    <path d="M94 72 76 119" stroke-dasharray="3 6"/>
+    <path d="M126 99 143 59" stroke-dasharray="3 6"/>
+  </g>
+  <path d="M25 100h36l31-29 31 29h19" fill="none" stroke="#E2A43A" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+  <path d="m137 95 7 5-7 5" fill="none" stroke="#E2A43A" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <g stroke="#138B8A" stroke-width="3">
+    <circle cx="61" cy="100" r="7" fill="#FFFFFF"/>
+    <circle cx="92" cy="71" r="7" fill="#FFFFFF"/>
+    <circle cx="123" cy="100" r="7" fill="#FFFFFF"/>
+  </g>
+  <g fill="#138B8A" opacity=".7">
+    <circle cx="46" cy="77" r="2.6"/>
+    <circle cx="78" cy="137" r="2.2"/>
+    <circle cx="111" cy="48" r="2.4"/>
+    <circle cx="137" cy="128" r="2.5"/>
+  </g>
+  <rect x="150" y="70" width="28" height="60" rx="8" fill="#103447"/>
+  <circle cx="164" cy="100" r="9" fill="#EEF5F5"/>
+  <circle cx="164" cy="100" r="4.5" fill="#138B8A"/>
+  <path d="M156 63h16" stroke="#103447" stroke-linecap="round" stroke-width="4"/>
+  <path d="M183 87v26" stroke="#70AAA9" stroke-linecap="round" stroke-width="2.5"/>
+</svg>
