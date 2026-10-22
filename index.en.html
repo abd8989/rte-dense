@@ -122,6 +122,7 @@
             <p>RTE-DENSE is structured around three research work packages and one cross-cutting package dedicated to coordination, integration, and dissemination.</p>
           </div>
           <div class="work-packages">
+            <p class="cross-cutting"><span>WP0</span> Coordination, cross-cutting management, integration, and dissemination.</p>
             <article class="work-row">
               <span class="wp-number">WP1</span>
               <div><h3>Advanced simulation methods in dense scattering media</h3><p>Develop and compare solution schemes adapted to dense-fog regimes.</p></div>
@@ -137,7 +138,6 @@
               <div><h3>Experimental validation and metrics</h3><p>Compare the methods developed with acquisitions in PAVIN using physical and perceptual metrics.</p></div>
               <span class="row-arrow" aria-hidden="true">↗</span>
             </article>
-            <p class="cross-cutting"><span>WP0</span> Coordination, cross-cutting management, integration, and dissemination.</p>
           </div>
         </div>
       </section>
@@ -268,6 +268,14 @@
         <p>Research project coordinated at Cerema · Intelligent Transport Systems team</p>
         <a href="#accueil" class="back-top">Back to top ↑</a>
       </div>
+      <p class="visitor-count">Site visitors: <span id="visitor-count" aria-live="polite">—</span></p>
     </footer>
+    <script data-goatcounter="https://VOTRE-CODE.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+    <script>
+      fetch("https://VOTRE-CODE.goatcounter.com/counter/TOTAL.json")
+        .then((response) => response.json())
+        .then((data) => { document.getElementById("visitor-count").textContent = data.count; })
+        .catch(() => {});
+    </script>
   </body>
 </html>

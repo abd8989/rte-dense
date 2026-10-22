@@ -122,6 +122,7 @@
             <p>RTE-DENSE s’organise autour de trois volets de recherche et d’un volet transverse consacré à la coordination, à l’intégration et à la diffusion.</p>
           </div>
           <div class="work-packages">
+            <p class="cross-cutting"><span>WP0</span> Coordination, pilotage transverse, intégration et diffusion.</p>
             <article class="work-row">
               <span class="wp-number">WP1</span>
               <div><h3>Méthodes avancées de simulation dans les milieux diffusants denses</h3><p>Développer et comparer des schémas de résolution adaptés aux régimes de brouillard dense.</p></div>
@@ -137,7 +138,6 @@
               <div><h3>Validation expérimentale et métriques</h3><p>Confronter les méthodes développées à des acquisitions dans PAVIN avec des métriques physiques et perceptives.</p></div>
               <span class="row-arrow" aria-hidden="true">↗</span>
             </article>
-            <p class="cross-cutting"><span>WP0</span> Coordination, pilotage transverse, intégration et diffusion.</p>
           </div>
         </div>
       </section>
@@ -268,6 +268,14 @@
         <p>Projet de recherche coordonné au Cerema · Équipe Systèmes de Transports Intelligents</p>
         <a href="#accueil" class="back-top">Retour en haut ↑</a>
       </div>
+      <p class="visitor-count">Visiteurs du site : <span id="visitor-count" aria-live="polite">—</span></p>
     </footer>
+    <script data-goatcounter="https://VOTRE-CODE.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+    <script>
+      fetch("https://VOTRE-CODE.goatcounter.com/counter/TOTAL.json")
+        .then((response) => response.json())
+        .then((data) => { document.getElementById("visitor-count").textContent = data.count; })
+        .catch(() => {});
+    </script>
   </body>
 </html>
