@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#103447">
-    <meta name="description" content="RTE-DENSE studies advanced methods for solving radiative transfer in dense scattering media, with a demonstrator focused on the camera in fog and validation on PAVIN.">
+    <meta name="description" content="RTE-DENSE studies advanced methods for solving radiative transfer in dense scattering media, with a demonstrator focused on the camera in fog and validation at the PAVIN facility.">
     <title>RTE-DENSE — Radiative transfer and embedded perception</title>
     <link rel="icon" type="image/svg+xml" href="assets/RTE-DENSE-icon.svg">
     <link rel="stylesheet" href="styles.css">
@@ -35,6 +35,8 @@
           <a href="#validation">Validation</a>
           <a href="#equipe">Team</a>
           <a href="#recrutement">Recruitment</a>
+          <a href="#codes">Codes</a>
+          <a href="#publications">Publications</a>
         </nav>
       </div>
     </header>
@@ -91,23 +93,42 @@
           <div class="objective-grid">
             <article class="objective-card">
               <span class="card-index">01</span>
-              <div class="card-icon icon-rays" aria-hidden="true"><i></i><i></i><i></i></div>
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 54 54" focusable="false">
+                  <path class="scattering-ray" d="M4 27h10l7-10 9 13 8-10 10 7" />
+                  <circle class="scattering-particle" cx="14" cy="27" r="3.5" />
+                  <circle class="scattering-particle scattering-particle-gold" cx="21" cy="17" r="3.5" />
+                  <circle class="scattering-particle" cx="30" cy="30" r="3.5" />
+                  <circle class="scattering-particle scattering-particle-gold" cx="38" cy="20" r="3.5" />
+                  <path class="scattering-arrow" d="m44 23 5 4-6 2" />
+                </svg>
+              </div>
               <h3>Solve radiative transfer</h3>
               <p>Develop and compare methods for solving the radiative transfer equation that are suited to dense scattering media.</p>
               <span class="card-tag">Numerical methods</span>
             </article>
             <article class="objective-card">
               <span class="card-index">02</span>
-              <div class="card-icon icon-network" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 54 54" focusable="false">
+                  <path class="acceleration-trail" d="M9 39h8M10 32h11M12 25h9" />
+                  <path class="acceleration-arrow" d="m19 41 10-9 7-8 8-12" />
+                  <path class="acceleration-head" d="m36 12 8-1-1 8" />
+                </svg>
+              </div>
               <h3>Accelerate simulations</h3>
               <p>Explore physics-guided artificial intelligence acceleration while preserving radiometric fidelity.</p>
               <span class="card-tag">Physics-guided AI</span>
             </article>
             <article class="objective-card">
               <span class="card-index">03</span>
-              <div class="card-icon icon-check" aria-hidden="true"><i></i><i></i></div>
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 54 54" focusable="false">
+                  <path class="validation-check" d="m15 28 8 8 17-19" />
+                </svg>
+              </div>
               <h3>Validate experimentally</h3>
-              <p>Establish cross-validation using acquisitions in PAVIN and physical and perceptual metrics.</p>
+              <p>Establish cross-validation using acquisitions in the PAVIN facility and physical and perceptual metrics.</p>
               <span class="card-tag">Simulation · measurement</span>
             </article>
           </div>
@@ -135,7 +156,7 @@
             </article>
             <article class="work-row">
               <span class="wp-number">WP3</span>
-              <div><h3>Experimental validation and metrics</h3><p>Compare the methods developed with acquisitions in PAVIN using physical and perceptual metrics.</p></div>
+              <div><h3>Experimental validation and metrics</h3><p>Compare the methods developed with acquisitions in the PAVIN facility using physical and perceptual metrics.</p></div>
               <span class="row-arrow" aria-hidden="true">↗</span>
             </article>
           </div>
@@ -146,21 +167,21 @@
         <div class="wrap validation-inner">
           <div class="validation-intro">
             <p class="section-kicker section-kicker-light">Validation under controlled conditions</p>
-            <h2>Link simulations to measurements at PAVIN.</h2>
-            <p>WP3 plans acquisitions on the PAVIN platform, which reproduces rain and fog conditions, followed by a cross-comparison with simulations using physical and perceptual metrics.</p>
+            <h2>Link simulations to measurements at the PAVIN facility.</h2>
+            <p>WP3 plans acquisitions in the PAVIN facility, which reproduces rain and fog conditions, followed by a cross-comparison with simulations using physical and perceptual metrics.</p>
           </div>
 
           <figure class="validation-diagram" aria-labelledby="validation-diagram-caption">
             <div class="validation-lanes">
               <article class="validation-lane">
                 <span class="lane-label">Experimental trials</span>
-                <div class="flow-node"><strong>PAVIN platform</strong><span>Controlled conditions: fog and rain</span></div>
+                <div class="flow-node"><strong>PAVIN facility</strong><span>Controlled conditions: fog and rain</span></div>
                 <span class="flow-arrow" aria-hidden="true">↓</span>
                 <div class="flow-node flow-node-output"><strong>Experimental acquisitions</strong><span>Reference scenarios</span></div>
               </article>
               <article class="validation-lane">
                 <span class="lane-label">Numerical simulation</span>
-                <div class="flow-node"><strong>RTE-DENSE in SWEET</strong><span>Methods studied in the project</span></div>
+                <div class="flow-node"><strong>RTE-DENSE in the simulator</strong><span>SWEET (Simulating WEather for intElligent Transportation systems) · Methods studied in the project</span></div>
                 <span class="flow-arrow" aria-hidden="true">↓</span>
                 <div class="flow-node flow-node-output"><strong>Simulated images</strong><span>Camera demonstrator in fog</span></div>
               </article>
@@ -174,7 +195,7 @@
             <figcaption id="validation-diagram-caption">Cross-validation principle planned in WP3.</figcaption>
           </figure>
 
-          <a class="button validation-link" href="https://www.cerema.fr/fr/evenements/plateforme-pavin-meteo-extreme" target="_blank" rel="noreferrer">Discover the PAVIN platform <span aria-hidden="true">↗</span></a>
+          <a class="button validation-link" href="https://www.cerema.fr/fr/evenements/plateforme-pavin-meteo-extreme" target="_blank" rel="noreferrer">Discover the PAVIN facility <span aria-hidden="true">↗</span></a>
           <p class="pavin-contact"><strong>Would you like to arrange trials or make a specific request related to PAVIN?</strong> Email <a href="mailto:adweather@cerema.fr">adweather@cerema.fr</a>.</p>
         </div>
       </section>
@@ -186,6 +207,10 @@
             <h2>SWEET, a tool for research.</h2>
             <p>SWEET is Cerema’s simulator for simulating perceptual sensors in adverse weather conditions. The project plans to develop and evaluate new simulation methods for dense scattering media in SWEET, as well as physics-guided accelerators.</p>
             <a class="resource-link" href="https://cv.hal.science/researchercerema" target="_blank" rel="noreferrer">SWEET-related publications on HAL <span aria-hidden="true">↗</span></a>
+            <div class="sweet-actions">
+              <button class="button button-primary" type="button" data-coming-soon aria-controls="sweet-coming-soon" aria-expanded="false">Simulate with SWEET <span aria-hidden="true">→</span></button>
+              <span class="coming-soon-message" id="sweet-coming-soon" role="status" aria-live="polite" hidden>Coming soon</span>
+            </div>
           </div>
           <div class="platform-note">
             <span class="note-symbol" aria-hidden="true">∿</span>
@@ -253,6 +278,14 @@
         </div>
       </section>
 
+      <section class="section placeholder-section" id="codes">
+        <div class="wrap"><h2>Codes</h2></div>
+      </section>
+
+      <section class="section placeholder-section placeholder-section-alt" id="publications">
+        <div class="wrap"><h2>Publications</h2></div>
+      </section>
+
       <section class="closing-section">
         <div class="wrap closing-inner">
           <img src="assets/RTE-DENSE-icon.svg" alt="" width="56" height="56">
@@ -268,14 +301,34 @@
         <p>Research project coordinated at Cerema · Intelligent Transport Systems team</p>
         <a href="#accueil" class="back-top">Back to top ↑</a>
       </div>
-      <p class="visitor-count">Site visitors: <span id="visitor-count" aria-live="polite">—</span></p>
+      <p class="visitor-count">Page views: <span id="visitor-count" aria-live="polite">—</span></p>
     </footer>
-    <script data-goatcounter="https://rte-dense-cerema.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+    <script data-goatcounter="https://VOTRE-CODE.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
     <script>
-      fetch("https://rte-dense-cerema.goatcounter.com/counter/TOTAL.json")
-        .then((response) => response.json())
-        .then((data) => { document.getElementById("visitor-count").textContent = data.count; })
-        .catch(() => {});
+      document.querySelectorAll("[data-coming-soon]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const notice = document.getElementById(button.getAttribute("aria-controls"));
+          if (notice) {
+            notice.hidden = false;
+            button.setAttribute("aria-expanded", "true");
+          }
+        });
+      });
+      const visitorCount = document.getElementById("visitor-count");
+      const trackingScript = document.querySelector("script[data-goatcounter]");
+      if (visitorCount && trackingScript) {
+        const endpoint = new URL(trackingScript.dataset.goatcounter);
+        const totalCountUrl = new URL("/counter/TOTAL.json", endpoint);
+        fetch(totalCountUrl)
+          .then((response) => {
+            if (!response.ok) throw new Error("Visitor count unavailable");
+            return response.json();
+          })
+          .then((data) => {
+            if (data.count !== undefined) visitorCount.textContent = data.count;
+          })
+          .catch(() => { visitorCount.textContent = "—"; });
+      }
     </script>
   </body>
 </html>
