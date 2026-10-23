@@ -279,3 +279,21 @@ h1, h2, h3 { font-family: var(--font-display); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
+
+/* Logos ANR, République française et Cerema en haut de page */
+.site-partner-logos { display: flex; align-items: center; justify-content: flex-end; gap: 22px; min-height: 56px; padding-block: 8px 4px; }
+.site-partner-logos img { display: block; height: auto; object-fit: contain; }
+.site-partner-logos .header-anr-logo { width: 98px; max-height: 42px; }
+.site-partner-logos .header-cerema-lockup { display: flex; align-items: center; gap: 9px; text-decoration: none; }
+.site-partner-logos .header-republique-logo { width: 38px; max-height: 44px; }
+.site-partner-logos .header-logo-divider { width: 1px; height: 34px; background: #dfe8e6; }
+.site-partner-logos .header-cerema-logo { width: 136px; max-height: 42px; }
+
+@media (max-width: 680px) {
+  .site-partner-logos { justify-content: center; gap: 16px; min-height: 48px; padding-block: 7px 3px; }
+  .site-partner-logos .header-anr-logo { width: 76px; max-height: 36px; }
+  .site-partner-logos .header-cerema-lockup { gap: 7px; }
+  .site-partner-logos .header-republique-logo { width: 32px; max-height: 38px; }
+  .site-partner-logos .header-logo-divider { height: 30px; }
+  .site-partner-logos .header-cerema-logo { width: 112px; max-height: 36px; }
+}
